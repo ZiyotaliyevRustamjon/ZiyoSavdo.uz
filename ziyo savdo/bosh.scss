@@ -1,0 +1,836 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: #C7B24C;
+    padding: 30px;
+
+    .linklar {
+        text-decoration: none;
+        margin-left: 40%;
+
+        a {
+            margin-left: 40px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+
+            &:hover {
+                transition: 1s;
+                text-decoration: none;
+                background-color: #161525;
+                padding: 10px;
+                border-radius: 50px;
+                box-shadow: 0 0 30px black;
+            }
+        }
+    }
+
+    .profil {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            transition: 0.9s;
+            color: white;
+        }
+    }
+
+    .profilrasm {
+        width: 50px;
+        position: absolute;
+        margin-top: -15px;
+        margin-left: 2%;
+    }
+
+    .profilmatn {
+        position: absolute;
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 6%;
+        margin-top: 0px;
+    }
+}
+
+// laptor 1024px
+
+@media (max-width: 1024px) {
+    header {
+        width: 1150px;
+
+        .linklar {
+            margin-left: 20%;
+
+            a {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .profil {
+        .profilrasm {
+            margin-left: 0.1%;
+        }
+    }
+}
+
+//   table 768px
+
+@media (max-width: 768px) {
+    header {
+        width: 1150px;
+
+        .linklar {
+            margin-left: 20%;
+
+            a {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .profil {
+        .profilrasm {
+            margin-left: -0.9%;
+        }
+    }
+}
+
+//   mobil L 425px
+
+@media (max-width: 425px) {
+    header {
+        width: 1150px;
+
+        .linklar {
+            margin-left: 26%;
+
+            a {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .profil {
+        .profilrasm {
+            margin-left: -5%;
+        }
+
+        .profilmatn {
+            margin-left: 10%;
+        }
+    }
+}
+
+// mobil S 320px
+
+@media (max-width: 320px) {
+    header {
+        width: 1150px;
+
+        .linklar {
+            margin-left: 26%;
+
+            a {
+                margin-left: 15px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .profil {
+        .profilrasm {
+            margin-left: -5%;
+        }
+
+        .profilmatn {
+            margin-left: 13%;
+        }
+    }
+}
+
+.bosh {
+    .boshaylana {
+        .aylana {
+            width: 450px;
+            height: 450px;
+            background-color: #211F34;
+            border-radius: 250px;
+            box-shadow: 0 0 50px black;
+            margin-left: 55%;
+            margin-top: 6%;
+
+            .aylanarasm {
+                margin-left: -70px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .matnlar {
+        .matn-sar {
+            position: absolute;
+            margin-top: -400px;
+            margin-left: 5%;
+            color: white;
+            font-weight: 900;
+        }
+
+        .matn-matn {
+            position: absolute;
+            margin-top: -260px;
+            color: white;
+            margin-left: 5%;
+        }
+    }
+
+    .matn-link {
+        position: absolute;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        margin-top: -140px;
+        margin-left: 5%;
+        background-color: gold;
+        padding: 10px;
+        border-radius: 50px;
+       &:hover{
+        box-shadow: 0 0 30px gold;
+        transition: 1s;
+       }
+    }
+}
+
+// table 768px
+
+@media (max-width: 768px) {
+    .bosh {
+        .boshaylana {
+            .aylana {
+                margin-left: 35%;
+            }
+        }
+        .matnlar {
+            margin-top: 55%;
+            margin-left: 25%;
+        }
+        .matn-link{
+            margin-left: 30%;
+        }
+    }
+}
+// Mobil L 425px
+
+
+@media (max-width: 425px) {
+    .bosh {
+        .boshaylana {
+            .aylana {
+                margin-left: 55%;
+            }
+        }
+        .matnlar {
+            margin-top: 105%;
+            margin-left: 65%;
+         
+            .matn-sar{
+                text-align: center;
+            }
+            .matn-matn{
+                text-align: center;
+                margin-left: 22%;
+                margin-top: -23%;
+                font-size: 20px;
+            }
+        }
+        .matn-link{
+            width: 190px;
+            margin-left: 85%;
+            margin-top: 70%;
+        }
+    }
+}
+// Mobil M 375px
+
+
+@media (max-width: 375px) {
+    .bosh {
+        .boshaylana {
+            .aylana {
+                margin-left: 60%;
+            }
+        }
+        .matnlar {
+            margin-top: 115%;
+            margin-left: 75%;
+         
+            .matn-sar{
+                text-align: center;
+            }
+            .matn-matn{
+                text-align: center;
+                margin-left: 22%;
+                margin-top: -23%;
+                font-size: 20px;
+            }
+        }
+        .matn-link{
+            width: 190px;
+            margin-left: 94%;
+            margin-top: 80%;
+        }
+    }
+}
+
+// Mobil S 320px
+    
+@media (max-width: 320px) {
+    .bosh {
+        .boshaylana {
+            .aylana {
+                margin-left: 72%;
+            }
+        }
+        .matnlar {
+            margin-top: 135%;
+            margin-left: 89%;
+         
+            .matn-sar{
+                text-align: center;
+            }
+            .matn-matn{
+                text-align: center;
+                margin-left: 22%;
+                margin-top: -23%;
+                font-size: 20px;
+            }
+        }
+        .matn-link{
+            width: 190px;
+            margin-left: 108%;
+            margin-top: 99%;
+        }
+    }
+}
+.bosh-ikki{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589), rgba(255, 217, 0, 0.151)), url(./images/klavyatura.jpg);
+    background-size: cover;
+    margin-top: 300px;
+    .row{
+        .komp{
+            position: absolute;
+            margin-left: 38%;
+            margin-top: 40px;
+            color: white;
+            font-weight: 800;
+        }
+        .card1{
+            position: absolute;
+            margin-left: 7%;
+            margin-top: 15%;
+        }
+
+        .card2{
+           
+            height: 500px;
+            position: absolute;
+            margin-left: 38%;
+            margin-top: 15%;
+           
+        }
+
+        .card3{
+            position: absolute;
+            margin-left: 70%;
+            margin-top: 15%;
+        }
+    }
+}
+
+// laptor 1024px
+
+@media (max-width: 1024px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+
+        .row{
+            .komp{
+                margin-left: 50%;
+            }
+            .card1{
+                width: 300px;
+            }
+            .card2{
+                width: 300px;
+                margin-left: 50%;
+            }
+            .card3{
+                width: 300px;
+                margin-left: 93%;
+            }
+    }
+}
+
+}
+
+// tablet 768px
+
+@media (max-width: 768px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+
+        .row{
+            .card1{
+                width: 300px;
+            }
+            .card2{
+                width: 300px;
+            }
+            .card3{
+                width: 300px;
+            }
+    }
+}
+
+}
+
+// mobil L 425px 
+
+@media (max-width: 425px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+        margin-top: 900px;
+
+        .row{
+            .komp{
+                margin-left: 95%;
+            }
+            .card1{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 20%;
+            }
+            .card2{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 100%;
+            }
+            .card3{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 180%;
+            }
+    }
+}
+
+}
+
+
+
+
+
+.bosh-ikki2{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589), rgba(255, 217, 0, 0.151)), url(./images/1e84f366-58c0-4051-b593-07e210b7ff6c.jpg);
+    background-size: cover;
+    margin-top: 300px;
+    .row{
+        .komp{
+            position: absolute;
+            margin-left: 40%;
+            margin-top: 40px;
+            color: white;
+            font-weight: 800;
+        }
+        .card1{
+            position: absolute;
+            margin-left: 7%;
+            margin-top: 15%;
+        }
+
+        .card2{
+           
+            height: 500px;
+            position: absolute;
+            margin-left: 38%;
+            margin-top: 15%;
+           
+        }
+
+        .card3{
+            position: absolute;
+            margin-left: 70%;
+            margin-top: 15%;
+        }
+    }
+}
+
+// laptor 1024px
+
+@media (max-width: 1024px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+
+        .row{
+            .komp{
+                margin-left: 50%;
+            }
+            .card1{
+                width: 300px;
+            }
+            .card2{
+                width: 300px;
+                margin-left: 50%;
+            }
+            .card3{
+                width: 300px;
+                margin-left: 93%;
+            }
+    }
+}
+
+}
+
+// tablet 768px
+
+@media (max-width: 768px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+
+        .row{
+            .card1{
+                width: 300px;
+            }
+            .card2{
+                width: 300px;
+            }
+            .card3{
+                width: 300px;
+            }
+    }
+}
+
+}
+
+// mobil L 425px 
+
+@media (max-width: 425px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+        margin-top: 900px;
+
+        .row{
+            .komp{
+                margin-left: 95%;
+            }
+            .card1{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 20%;
+            }
+            .card2{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 100%;
+            }
+            .card3{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 180%;
+            }
+    }
+}
+
+}
+
+
+.bosh-ikki3{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589), rgba(255, 217, 0, 0.151)), url(./images/IdeaCentre_AIO_large.jpg);
+    background-size: cover;
+    margin-top: 300px;
+    .row{
+        .komp{
+            position: absolute;
+            margin-left: 40%;
+            margin-top: 40px;
+            color: white;
+            font-weight: 800;
+        }
+        .card1{
+            position: absolute;
+            margin-left: 7%;
+            margin-top: 15%;
+        }
+
+        .card2{
+           
+            height: 500px;
+            position: absolute;
+            margin-left: 38%;
+            margin-top: 15%;
+           
+        }
+
+        .card3{
+            position: absolute;
+            margin-left: 70%;
+            margin-top: 15%;
+        }
+    }
+}
+
+// laptor 1024px
+
+@media (max-width: 1024px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+
+        .row{
+            .komp{
+                margin-left: 50%;
+            }
+            .card1{
+                width: 300px;
+            }
+            .card2{
+                width: 300px;
+                margin-left: 50%;
+            }
+            .card3{
+                width: 300px;
+                margin-left: 93%;
+            }
+    }
+}
+
+}
+
+// tablet 768px
+
+@media (max-width: 768px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+
+        .row{
+            .card1{
+                width: 300px;
+            }
+            .card2{
+                width: 300px;
+            }
+            .card3{
+                width: 300px;
+            }
+    }
+}
+
+}
+
+// mobil L 425px 
+
+@media (max-width: 425px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+        margin-top: 900px;
+
+        .row{
+            .komp{
+                margin-left: 95%;
+            }
+            .card1{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 20%;
+            }
+            .card2{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 100%;
+            }
+            .card3{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 180%;
+            }
+    }
+}
+
+}
+
+.bosh-ikki4{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589), rgba(255, 217, 0, 0.151)), url(./images/maxresdefault-3.jpg);
+    background-size: cover;
+    margin-top: 300px;
+    .row{
+        .komp{
+            position: absolute;
+            margin-left: 30%;
+            margin-top: 40px;
+            color: white;
+            font-weight: 800;
+        }
+        .card1{
+            position: absolute;
+            margin-left: 7%;
+            margin-top: 15%;
+        }
+
+        .card2{
+           
+            height: 500px;
+            position: absolute;
+            margin-left: 38%;
+            margin-top: 15%;
+           
+        }
+
+        .card3{
+            position: absolute;
+            margin-left: 70%;
+            margin-top: 15%;
+        }
+    }
+}
+
+// laptor 1024px
+
+@media (max-width: 1024px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+
+        .row{
+            .komp{
+                margin-left: 50%;
+            }
+            .card1{
+                width: 300px;
+            }
+            .card2{
+                width: 300px;
+                margin-left: 50%;
+            }
+            .card3{
+                width: 300px;
+                margin-left: 93%;
+            }
+    }
+}
+
+}
+
+// tablet 768px
+
+@media (max-width: 768px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+
+        .row{
+            .card1{
+                width: 300px;
+            }
+            .card2{
+                width: 300px;
+            }
+            .card3{
+                width: 300px;
+            }
+    }
+}
+
+}
+
+// mobil L 425px 
+
+@media (max-width: 425px) {
+
+    .bosh-ikki{
+        width: 1159px;
+        height: 800px;
+        margin-top: 900px;
+
+        .row{
+            .komp{
+                margin-left: 95%;
+            }
+            .card1{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 20%;
+            }
+            .card2{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 100%;
+            }
+            .card3{
+                width: 300px;
+                margin-top: 150px;
+                margin-left: 180%;
+            }
+    }
+}
+
+}
+.row{
+    footer{
+        .footer-bosh{
+            width: 100%;
+            height: 200px;
+            background-color: #16152588;
+        }
+        .profil1{
+            position: absolute;
+            padding: 60px;
+            .profilrasm1{
+                width: 50px;
+            }
+            .profilmatn2{
+                font-size: 25px;
+                position: absolute;
+                margin-left: 60px;
+                margin-top: -40px;
+            }
+        }
+    }
+}
